@@ -21,16 +21,49 @@ body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
 }
+
+/* Частковий ресет стилей браузера start */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Частковий ресет стилей браузера end */
+
 /* reset styles  Скидання*/
 .link {
   text-decoration: none;
+  color: currentColor;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-/*  Общий класс для вебстудио на 2 страницы  */
+/* Base styles  */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*  Heder Общий класс для вебстудио и портфолио на 2 страницы  */
 
 /*  Header section */
+.header {
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .link-logo {
   font-family: var(--secondary-font);
@@ -47,6 +80,20 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
+  margin-right: 93px;
+}
+.header-nav {
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+  /* gap: 50px; */
+}
+.header-item {
+  margin-right: 50px;
+}
+.header-item:last-child {
+  margin-right: o;
 }
 .header-link {
   font-family: var(--main-font);
@@ -55,6 +102,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* Hover Focus and Heder */
 .header-link:hover,
@@ -77,6 +126,9 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link-tel {
   font-family: var(--main-font);
@@ -85,6 +137,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* Hero section  */
 .hero {
@@ -100,6 +154,8 @@ body {
   text-transform: uppercase;
   color: var(--secondary-w-txt-cl);
   background-color: var(--grey-bg-cl);
+  width: 696px;
+  height: 120px;
 }
 
 .hero-btn {
@@ -115,6 +171,11 @@ body {
   background-color: var(--blue-bg-cl);
   border: transparent;
   cursor: pointer;
+  max-width: 200px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
