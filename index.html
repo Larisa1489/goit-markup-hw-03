@@ -62,7 +62,7 @@
       <!-- Hero section -->
       <!-- About section -->
       <section class="about">
-        <div class="container">
+        <div class="container about-container">
           <h2 class="about-title" hidden>Преимущества компании</h2>
           <ul class="about-list list">
             <li class="about-item">
@@ -131,7 +131,7 @@
       <!--  Section description -->
       <!-- Team section -->
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -142,8 +142,10 @@
                 width="270"
                 height="368"
               />
-              <h3 class="team-subtitle">Игорь Демьяненко</h3>
-              <p class="team-description" lang="en">Product Designer</p>
+              <div class="team-desc">
+                <h3 class="team-subtitle">Игорь Демьяненко</h3>
+                <p class="team-description" lang="en">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-item">
@@ -154,8 +156,10 @@
                 width="270"
                 height="368"
               />
-              <h3 class="team-subtitle">Ольга Репина</h3>
-              <p class="team-description" lang="en">Frontend Developer</p>
+              <div class="team-desc">
+                <h3 class="team-subtitle">Ольга Репина</h3>
+                <p class="team-description" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -165,8 +169,10 @@
                 width="270"
                 height="368"
               />
-              <h3 class="team-subtitle">Николай Тарасов</h3>
-              <p class="team-description" lang="en">Marketing</p>
+              <div class="team-desc">
+                <h3 class="team-subtitle">Николай Тарасов</h3>
+                <p class="team-description" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -176,8 +182,10 @@
                 width="270"
                 height="368"
               />
-              <h3 class="team-subtitle">Михаил Ермаков</h3>
-              <p class="team-description" lang="en">UI Designer</p>
+              <div class="team-desc">
+                <h3 class="team-subtitle">Михаил Ермаков</h3>
+                <p class="team-description" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -190,20 +198,22 @@
     <footer class="footer">
       <div class="container">
         <a class="footer-link link" href="/" lang="en">Web<span class="white">Studio</span> </a>
-        <address class="address-contacts" id="address-contacts">
-          <p>
-            <a
-              class="address-text-link link"
-              href="https://goo.gl/maps/B6g1ze34ZQEhAXsM9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </p>
-          <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
-          <a class="address-link link" href="tel:380991111111 ">+38 099 111 11 11</a>
-        </address>
+        <div class="container-address">
+          <address class="address-contacts" id="address-contacts">
+            <p>
+              <a
+                class="address-text-link link"
+                href="https://goo.gl/maps/B6g1ze34ZQEhAXsM9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </p>
+            <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+            <a class="address-link link" href="tel:380991111111 ">+38 099 111 11 11</a>
+          </address>
+        </div>
       </div>
     </footer>
 
