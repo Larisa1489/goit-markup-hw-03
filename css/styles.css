@@ -36,9 +36,16 @@ h6,
 p {
   margin: 0;
 }
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 img {
   display: block;
-  margin: 0px;
+  max-width: 100%;
+  height: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -220,8 +227,6 @@ img {
 .about-list {
   display: flex;
   gap: 30px;
-
-  flex-basis: 1170;
 }
 
 .about-subtitle {
@@ -262,11 +267,7 @@ img {
   gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
-.section-logo {
-  display: block;
-  width: 370px;
-  height: 294px;
-}
+
 /*  Section team descreption */
 /*  Team secsion */
 .team {
@@ -302,12 +303,12 @@ img {
 .team-desc {
   padding: 30px 59px;
 }
-.team-img {
+/* .team-img {
   display: block;
   width: 270px;
   height: 260px;
   border-top: none;
-}
+} */
 .team-subtitle {
   font-family: var(--main-font);
   font-weight: 500;
@@ -447,10 +448,10 @@ img {
   /* flex-basis: calc((100% - var(--items) -1) * var(--indent)) / var (var(--indent)); */
   flex-basis: calc((100%- (var(--items)-1) * var(--indent)) / var(--indent));
 }
-.portholio-logo {
+/* .portholio-logo {
   display: block;
   margin: 0;
-}
+} */
 .desc {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
