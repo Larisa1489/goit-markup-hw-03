@@ -73,7 +73,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 
 /*  Heder Общий класс для вебстудио и портфолио на 2 страницы  */
@@ -444,7 +444,8 @@ img {
   flex-wrap: wrap;
 }
 .portholio-item-img {
-  flex-basis: calc((100% - var(--items) -1) * var(--indent)) / var (var(--indent));
+  /* flex-basis: calc((100% - var(--items) -1) * var(--indent)) / var (var(--indent)); */
+  flex-basis: calc((100%- (var(--items)-1) * var(--indent)) / var(--indent));
 }
 .portholio-logo {
   display: block;
