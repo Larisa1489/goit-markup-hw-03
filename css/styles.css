@@ -13,6 +13,9 @@
   --light-bg-cl: #e5e5e5;
   --blue-bg-cl: #2196f3;
 
+  --items: 3;
+  --indent: 30px;
+
   /* others  */
 }
 
@@ -70,6 +73,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid red;
 }
 
 /*  Heder Общий класс для вебстудио и портфолио на 2 страницы  */
@@ -197,7 +201,6 @@ img {
   background-color: var(--blue-bg-cl);
   border: transparent;
   cursor: pointer;
-  max-width: 200px;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
@@ -210,20 +213,17 @@ img {
   color: #188ce8;
 }
 /* About section */
-.about-container {
+.about {
   padding-top: 94px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
+
 .about-list {
   display: flex;
   gap: 30px;
-  width: 1170px;
+
+  flex-basis: 1170;
 }
-.about-text {
-  width: 270px;
-  height: 101px;
-}
+
 .about-subtitle {
   font-family: var(--main-font);
   font-weight: 700;
@@ -239,11 +239,14 @@ img {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  width: 270px;
+  height: 101px;
 }
 /* Section description */
-.container-section {
-  padding: 0px;
+.section {
+  padding-top: 94px;
 }
+
 .section-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -252,16 +255,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 .section-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
-  width: 1170px;
-  height: 386px;
 }
 .section-logo {
   display: block;
@@ -270,9 +269,12 @@ img {
 }
 /*  Section team descreption */
 /*  Team secsion */
+.team {
+  padding-top: 94px;
+}
 .team-container {
   background: #f5f4fa;
-  padding: 0px;
+  /* padding: 0px; */
 }
 .team-title {
   font-family: var(--main-font);
@@ -282,8 +284,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
@@ -330,14 +331,15 @@ img {
 /* Footer section 1 страница-совместный с портфолио */
 .footer {
   background-color: var(--grey-bg-cl);
-  height: 252px;
+  /* height: 252px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .footer-logo {
   width: 145px;
-  padding-top: 59px;
-  margin-bottom: 21px;
-  padding-left: 0px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .footer-link {
   font-family: var(--secondary-font);
@@ -350,13 +352,7 @@ img {
 .white {
   color: var(--secondary-w-txt-cl);
 }
-.address-container {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 60px;
-  width: 231px;
-  margin-right: 1154px;
-}
+
 .address-text-link {
   font-family: var(--main-font);
   font-weight: 400;
@@ -382,8 +378,11 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 60px;
 }
 /* Hover Focus and Footer */
+.address-link-tel:hover,
+.address-link-tel:focus,
 .address-link:hover,
 .address-link:focus,
 .address-text-link:hover,
@@ -395,13 +394,15 @@ img {
 /* ПОРТФОЛИО CSS  */
 
 /* HEDER Совместный с первой страницой  */
-
-/* Main section */
-
 .header-page {
   border-bottom: 1px solid #ececec;
 }
 
+/*  Main section  */
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .main-container {
   display: flex;
   align-items: center;
@@ -409,14 +410,9 @@ img {
 .main-list {
   display: flex;
   gap: 8px;
-  width: 611px;
-  height: 54px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-.main-item {
+  margin-bottom: 34px;
 }
 
 .main-btn-current {
@@ -438,33 +434,21 @@ img {
   border: transparent;
   cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
-.portholio-container {
-  display: flex;
-  align-items: center;
-}
+/*  Portfolio  */
+
 .portholio-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
-
-/* .portholio-item-img {
-  width: 370px;
-  height: 404px;
-  border-top: none;
-  border: 1px solid #eeeeee;
-} */
 .portholio-item-img {
-  /* display: block; */
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - var(--items) -1) * var(--indent)) / var (var(--indent));
 }
 .portholio-logo {
   display: block;
-  width: 370px;
-  height: 294px;
-  padding-bottom: 20px;
+  margin: 0;
 }
 .desc {
   padding: 20px 24px;
