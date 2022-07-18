@@ -237,6 +237,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
 }
 .about-text {
   font-family: var(--main-font);
@@ -245,7 +246,6 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   width: 270px;
-  height: 101px;
 }
 /* Section description */
 .section {
@@ -272,11 +272,10 @@ img {
 /*  Team secsion */
 .team {
   padding-top: 94px;
-}
-.team-container {
   background: #f5f4fa;
-  /* padding: 0px; */
 }
+/* .team-container {
+  } */
 .team-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -290,7 +289,7 @@ img {
 .team-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
+
   width: 1170px;
 }
 .team-item {
@@ -332,14 +331,11 @@ img {
 /* Footer section 1 страница-совместный с портфолио */
 .footer {
   background-color: var(--grey-bg-cl);
-  /* height: 252px; */
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
-  width: 145px;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 .footer-link {
@@ -353,8 +349,10 @@ img {
 .white {
   color: var(--secondary-w-txt-cl);
 }
-
-.address-text-link {
+.address-item {
+  margin-bottom: 9px;
+}
+.address-link-text {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -363,7 +361,7 @@ img {
   color: var(--secondary-w-txt-cl);
   margin-bottom: 9px;
 }
-.address-link {
+.address-link-mail {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -384,10 +382,10 @@ img {
 /* Hover Focus and Footer */
 .address-link-tel:hover,
 .address-link-tel:focus,
-.address-link:hover,
-.address-link:focus,
-.address-text-link:hover,
-.address-text-link:focus {
+.address-link-mail:hover,
+.address-link-mail:focus,
+.address-link-text:hover,
+.address-link-text:focus {
   color: var(--acent-txt-cl);
 }
 /* Footer section  */
