@@ -349,6 +349,9 @@ img {
 .white {
   color: var(--secondary-w-txt-cl);
 }
+.address-contacts {
+  font-style: normal;
+}
 .address-item {
   margin-bottom: 9px;
 }
